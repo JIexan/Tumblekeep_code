@@ -1,0 +1,43 @@
+﻿using System.Collections.Generic;
+
+[System.Serializable]
+public class SaveDataTechnologyTree : SaveDataBase
+{
+    public Dictionary<idTechTree, ObscuredInt> technologyTreeValues = null;
+
+    public override void CheckValues()
+    {
+        base.CheckValues();
+        int count = 30;
+        technologyTreeValues = CheckDictionary(technologyTreeValues, count, 0);
+    }
+
+    public enum idTechTree
+    {
+        _1,
+        _2,
+        _3,
+        _4,
+        _5,
+        _6,
+        _7,
+        _8,
+        _9,
+        _10,
+        _11,
+        _12,
+        _13,
+        _14,
+        _15,
+        _16,
+        _17,
+        _18,
+        _19,
+        _20,
+        _21,
+        _22,
+        _23,
+        _24,
+        _25,
+    }
+}
